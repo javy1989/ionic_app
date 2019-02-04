@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <img src="../../../assets/icon/logo.png">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../../assets/icon/hotel1.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../../assets/icon/hotel2.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="../../../assets/icon/hotel3.jpg">
+    </ion-slide>
+  </ion-slides>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <h1 class="titulo">Card Title</h1>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p class="texto">
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </p>
+    </ion-card-content>
+  </ion-card> 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="full">
+          Facebook
+          <ion-icon slot="start" name="logo-facebook">
+          </ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button color="danger" expand="full">
+          YouTube
+          <ion-icon slot="start" name="logo-youtube"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

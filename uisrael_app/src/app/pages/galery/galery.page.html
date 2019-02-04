@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hoteles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <ng-template ngFor let-user [ngForOf]="usuarios" let-i="index" [ngForTrackBy]="trackByFn">
+      <ion-item (click)="gotoHotel(user.id)">
+        <ion-avatar item-left>
+          <img src="../../../assets/logo/hotel_{{user.id}}.jpg">
+        </ion-avatar>
+        <h2>{{user.name}}</h2>
+      </ion-item>
+    </ng-template>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-button tupe="button" (click)="gotoGalery()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+      hotel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="gotoAdd()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div class="user">
+    <img src="../../../assets/logo/hotel_{{user.id}}.jpg">
+    <h1>{{user.name}}</h1>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="../../../assets/avatars/iconfinder_1.png">
+      </ion-thumbnail>
+      <ion-label>Email</ion-label>
+      <p>{{user.email}}</p>
+      <p>{{user.website}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
